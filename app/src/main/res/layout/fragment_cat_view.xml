@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.foodapp.appfood.Fragments.CartFragment">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorRootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:id="@+id/android_appbar_layout"
+            android:layout_height="200dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolbarLayoutAndroidExample"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/parallax_header_imageview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.7" />
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar_android"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/nested_scroll_view"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:id="@+id/linear_layout_android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Loading..."/>
+                <TextView
+                    android:id="@+id/mrp"
+                    android:layout_below="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..."/>
+
+                <TextView
+                    android:id="@+id/disount"
+                    android:layout_below="@+id/mrp"
+                    android:background="#fb0"
+                    android:textColor="#fff"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..."/>
+
+                <LinearLayout
+                    android:id="@+id/selling1"
+                    android:layout_below="@+id/disount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:text="₹ "/>
+
+                <TextView
+                    android:id="@+id/selling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:text="Loading..."/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/size"
+                    android:layout_below="@+id/selling1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=""/>
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_below="@+id/size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..."/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/desc">
+
+
+                    <LinearLayout
+                        android:id="@+id/liner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_above="@+id/button1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/decrease"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/strock4"
+                            android:text="-"
+                            android:textColor="#fff"/>
+
+                        <TextView
+                            android:id="@+id/integer_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="16dp"
+                            android:text="1"
+                            android:textStyle="bold"
+                            android:textSize="30sp" />
+
+                        <Button
+                            android:id="@+id/increase"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/strock4"
+                            android:text="+"
+                            android:textColor="#fff"/>
+                    </LinearLayout>
+                    <TextView
+                            android:id="@+id/button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/strock4"
+                        android:text="Add to Cart"
+                        android:textColor="#fff"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>

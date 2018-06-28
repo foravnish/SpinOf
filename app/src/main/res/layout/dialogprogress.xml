@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<net.bohush.geometricprogressview.GeometricProgressView-->
+        <!--android:id="@+id/progressView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:gp_type="triangle"-->
+        <!--app:gp_number_of_angles="3"-->
+        <!--app:gp_color="@color/colorAccent"-->
+        <!--app:gp_duration="500"-->
+        <!--android:layout_gravity="center"-->
+        <!--app:gp_figure_padding="3dp" />-->
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/amazon"/>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context="com.foodapp.appfood.Activity.MainActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/logo"/>
+
+    <!--<Button-->
+        <!--android:id="@+id/signup"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:text="Sign Up"-->
+        <!--android:background="@drawable/strock4"-->
+        <!--android:padding="10dp"-->
+        <!--android:textSize="22dp"-->
+        <!--android:textColor="#fff"-->
+        <!--android:layout_above="@+id/btnlogin"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_gravity="bottom"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btnlogin"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:text="Login"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@drawable/strock4"-->
+        <!--android:padding="10dp"-->
+        <!--android:textSize="22dp"-->
+        <!--android:textColor="#fff"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_gravity="bottom"/>-->
+
+</RelativeLayout>
